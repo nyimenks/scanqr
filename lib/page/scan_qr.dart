@@ -69,21 +69,7 @@ class _QRPageState extends State<QRPage> {
               // Share.share('check out my website https://example.com');
             // }, child: Text("Share")),
           // )
-          Padding(
-            padding: const EdgeInsets.fromLTRB(130.0, 3.0, 130.0, 3.0),
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (BuildContext ctx) => HomePage()));
-              },
-              child: Text("Home Page"),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue,
-              ),
-            ),
-          ),
+
         ],
       ),
     );
