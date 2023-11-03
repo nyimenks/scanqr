@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:scan_qr/page/profile_page.dart';
+import 'package:scan_qr/page/scan_qr.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -34,7 +35,19 @@ class _HomePageState extends State<HomePage> {
                   backgroundColor: Color(0xFF328062),
                 ),
               ),
-            )
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext ctx) => QRPage()));
+              },
+              child: Text("Scan QR"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color(0xFF328062),
+              ),
+            ),
           ],
         ),
         drawer: Container(
